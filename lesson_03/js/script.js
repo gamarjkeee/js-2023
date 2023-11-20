@@ -12,12 +12,12 @@ let res;
 
 button0.addEventListener("click", () => {
   firstChildName = prompt("Ім'я першої дитини", "Юхим");
-  secondChildName = prompt("Ім'я першої дитини", "Микита");
+  secondChildName = prompt("Ім'я другої дитини", "Микита");
   nummOfCandiesOfFirstChild = parseInt(
-    prompt("Введіть кількість цукерок в перщої дитини", 5)
+    prompt(`Введіть кількість цукерок має ${firstChildName}`, 5)
   );
   nummOfCandiesOfSecondChild = parseInt(
-    prompt("Введіть кількість цукерок в перщої дитини", 4)
+    prompt(`Введіть кількість цукерок має ${secondChildName}`, 4)
   );
   if (nummOfCandiesOfFirstChild > nummOfCandiesOfSecondChild) {
     res = `Цукерок більше у ${firstChildName}`;
